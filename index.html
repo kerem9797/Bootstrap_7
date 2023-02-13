@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Proje 7</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="extra.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+   
+   <!--Form-->
+   <div class="container my-3">
+    <div class="row">
+        <div class="col-12 col-sm-10 col-md-8 col-xl-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label" for="isim">Ad:</label>
+                    <input type="text" class="form-control" id="isim">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="soyisim">Soyad:</label>
+                    <input type="text" class="form-control" id="soyisim">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">E-Posta:</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailAciklama">
+                    <div class="form-text" id="emailAciklama">E-posta adresiniz bizim güvencemiz altındadır.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="telefon">Telefon:</label>
+                    <input type="tel" class="form-control" id="telefon">
+                </div>
+                <div class="mb-3">
+                    <div>
+                        <label class="form-label" id="malefemale">Cinsiyet : </label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="malefemale" id="female">
+                            <label class="form-check-label" for="female">Kadın</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="malefemale" id="male">
+                            <label class="form-check-label" for="male">Erkek</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="egitimDurumu">Eğitim Durumunuz:</label>
+                    <div>
+                        <input placeholder="Seç..." class="form-control" id="egitimDurumu" list="veriListesi">
+                        <datalist id="veriListesi">
+                            <option value="İlkokul"></option>
+                            <option value="Ortaokul"></option>
+                            <option value="Lise"></option>
+                            <option value="Lisans"></option>
+                            <option value="Yüksek Lisans"></option>
+                            <option value="Doktora"></option>
+                            <option value="Hiçbiri"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="aralikSec">Hizmetimizden ne kadar memnun kaldınız?</label>
+                    <div>
+                        <input type="range" class="form-range" id="aralikSec" aria-describedby="aralikAciklama">
+                        <div>
+                            <span class="form-text" style="margin-left: 0px;" id="aralikAciklama">Hiç</span>
+                            <span class="form-text" style="margin: 165px;" id="aralikAciklama">Orta</span>
+                            <span class="form-text" style="margin-right:0px;" id="aralikAciklama">Çok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="textArea">Açıklama:</label>
+                    <textarea class="form-control" id="textArea" rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dosya">Dosya Yükle:</label>
+                    <input type="file" class="form-control" id="dosya">
+                </div>
+                <button type="button" class="btn btn-secondary">Onayla</button>
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <!--Form2-->
+   <div class="container my-5">
+    <div class="row">
+        <div class="col-12 col-sm-10 col-md-8 col-xl-4">
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="isim" placeholder="Ad">
+                    <label for="isim">Ad</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="soyisim" placeholder="Soyad">
+                    <label for="soyisim">Soyad</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailAciklama" placeholder="Email">
+                    <label class="form-label" for="email">E-Posta</label>
+                    <div class="form-text" id="emailAciklama">E-posta adresiniz bizim güvencemiz altındadır.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="telefon" placeholder="Telefon">
+                    <label class="form-label" for="telefon">Telefon</label>
+                </div>
+                <div class="mb-3">
+                    <div>
+                        <label class="form-label" id="malefemale">Cinsiyet : </label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="malefemale" id="female">
+                            <label class="form-check-label" for="female">Kadın</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="malefemale" id="male">
+                            <label class="form-check-label" for="male">Erkek</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="egitimDurumu">Eğitim Durumunuz:</label>
+                    <div>
+                        <input placeholder="Seç..." class="form-control" id="egitimDurumu" list="veriListesi">
+                        <datalist id="veriListesi">
+                            <option value="İlkokul"></option>
+                            <option value="Ortaokul"></option>
+                            <option value="Lise"></option>
+                            <option value="Lisans"></option>
+                            <option value="Yüksek Lisans"></option>
+                            <option value="Doktora"></option>
+                            <option value="Hiçbiri"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="aralikSec">Hizmetimizden ne kadar memnun kaldınız?</label>
+                    <div>
+                        <input type="range" class="form-range" id="aralikSec" aria-describedby="aralikAciklama">
+                        <div>
+                            <span class="form-text" style="margin-left: 0px;" id="aralikAciklama">Hiç</span>
+                            <span class="form-text" style="margin: 165px;" id="aralikAciklama">Orta</span>
+                            <span class="form-text" style="margin-right:0px;" id="aralikAciklama">Çok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="textArea" rows="5" placeholder="Aciklama"></textarea>
+                    <label class="form-label" for="textArea">Açıklama</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dosya">Dosya Yükle:</label>
+                    <input type="file" class="form-control" id="dosya">
+                </div>
+                <button type="button" class="btn btn-secondary">Onayla</button>
+            </form>
+        </div>
+    </div>
+   </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
